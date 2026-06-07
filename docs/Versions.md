@@ -11,3 +11,10 @@ there is no coloring in this version and this is just a simple calculation of th
 
 #### Description
 in this version i used a color palette + lerp to color it.
+
+### V3 :
+
+![v3](v3.png)
+#### Description
+there's nothing new visually, i implemented multi-threading
+however the image looks different because i changed max iterations count. 

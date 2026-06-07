@@ -46,7 +46,13 @@ first approach makes the image look tasteless
 for the second approach we generate exactly one color for each iteration amount 
 
 ### Lerp
+
 Linear interpolation also known as Lerp is a method in mathematics to make a discrete functions continuous
 you pick two points and using a formula get the point in between 
 we use this for two colors and we generate a point between R, G, B and Alpha to create a new color
 for more info : [Lerp Wikipedia page](https://en.wikipedia.org/wiki/Linear_interpolation)
+
+### Multi-threading
+
+to make the program faster i used multi-threading 
+multi-threading works by simply splitting image into different parts 
