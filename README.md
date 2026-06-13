@@ -22,7 +22,7 @@ This project provides a straightforward way to compute the Mandelbrot set. The f
 git clone https://github.com/farnam-jhn/MandelbrotExplorer.git
 cd MandelbrotExplorer
 ```
-> Note : on linux machines you need `MbedTLS`
+> Note : on linux machines you need `MbedTLS`  
 On Debian based distros:
 ```bash
 sudo apt install libmbedtls-dev
