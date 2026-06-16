@@ -23,6 +23,7 @@ git clone https://github.com/farnam-jhn/MandelbrotExplorer.git
 cd MandelbrotExplorer
 ```
 > Note : on linux machines you need `MbedTLS`  
+
 On Debian based distros:
 ```bash
 sudo apt install libmbedtls-dev
@@ -34,6 +35,12 @@ sudo pacman -S mbedtls
 RHEL based:
 ```bash
 sudo dnf install mbedtls-devel
+```
+
+> Note : on macOS you can install sfml using brew
+
+```bash
+brew install sfml
 ```
 
 2. Create a build directory and compile:
