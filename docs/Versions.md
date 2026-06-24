@@ -18,3 +18,8 @@ in this version i used a color palette + lerp to color it.
 #### Description
 there's nothing new visually, i implemented multi-threading
 however the image looks different because i changed max iterations count. 
+### V4 :
+![v4-julia](v4-julia.png)
+#### Description
+Modeld julia set, added an interface for fractals.
+practically nothing new.
