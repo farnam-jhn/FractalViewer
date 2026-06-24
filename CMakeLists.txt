@@ -13,11 +13,11 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(mb-explorer src/main.cpp
+add_executable(fracv src/main.cpp
         src/models/Mandelbrot.h
         src/VisualComputer.h
         src/models/Julia.h)
-target_compile_features(mb-explorer PRIVATE cxx_std_17)
-target_link_libraries(mb-explorer PRIVATE SFML::Graphics Threads::Threads)
+target_compile_features(fracv PRIVATE cxx_std_17)
+target_link_libraries(fracv PRIVATE SFML::Graphics Threads::Threads)
 
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT mb-explorer)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT fracv)
