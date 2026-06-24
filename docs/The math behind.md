@@ -1,3 +1,4 @@
+#### Mandelbrot set
 I believe mandelbrot set is one of the easiest sets to generate mathematically 
 
 here's how it works
@@ -13,3 +14,9 @@ Z(0) = 0 + 0i
 ```
 we start a random `c` on the complex plain
 now `c` is inside mandelbrot set if `|Z(n)|` converges as `n -> ∞`
+
+#### Julia set
+Julia set isn't that different from mandelbrot set, matter of facts thay are generated using the same function, same method and same variables, but there is a difference:
+in mandelbrot set `Z` starts from the origin and `C` is any constant complex number 
+but in julia set, `C` is a constant complex number and `Z` is variable 
+
