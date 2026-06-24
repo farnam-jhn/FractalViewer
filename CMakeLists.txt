@@ -14,10 +14,9 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 add_executable(mb-explorer src/main.cpp
-        src/Mandelbrot.cpp
-        src/Mandelbrot.h
-        src/VisualComputer.cpp
-        src/VisualComputer.h)
+        src/models/Mandelbrot.h
+        src/VisualComputer.h
+        src/models/Julia.h)
 target_compile_features(mb-explorer PRIVATE cxx_std_17)
 target_link_libraries(mb-explorer PRIVATE SFML::Graphics Threads::Threads)
 
