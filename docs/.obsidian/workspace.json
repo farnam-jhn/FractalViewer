@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Versions.md",
+                "file": "TODOs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Versions"
+              "title": "TODOs"
             }
           }
         ],
@@ -198,8 +198,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "ed550cc8bc399e90",
+  "active": "fc6676ac4eff8e6a",
   "lastOpenFiles": [
+    "v5-3.png",
+    "v5-2.png",
+    "v5-1.png",
+    "Screenshot 2026-06-25 at 12.47.34 PM.png",
+    "Screenshot 2026-06-25 at 12.47.27 PM.png",
+    "Screenshot 2026-06-25 at 12.47.16 PM.png",
+    "Versions.md",
+    "Mandelbrot explorer.md",
     "v4-julia.png",
     "v3.png",
     "v2.png",
@@ -210,12 +218,7 @@
     "C++ Implementation.md",
     "FUTURE IDEA.md",
     "().md",
-    "Versions.md",
     "img.png",
-    "img2.png",
-    "Screenshot 2026-06-07 114053.png",
-    "Screenshot 2026-06-03 132446.png",
-    "Screenshot 2026-06-02 163740.png",
     "The.md",
     "The 1.md",
     "Welcome.md"
