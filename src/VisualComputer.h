@@ -9,9 +9,22 @@
 
 #include "models/Fractal.h"
 
+struct Viewport {
+    double minReal;
+    double maxReal;
+    double minImag;
+    double maxImag;
+};
+
 class VisualComputer {
 public:
-    void computeImage(const Fractal &fractal, unsigned int width, unsigned int height, unsigned int startWidth, unsigned int startHeight, sf::Image &currentImage) const {
+    void computeImage(const Fractal &fractal,
+                      unsigned int width,
+                      unsigned int height,
+                      const Viewport &viewport,
+                      unsigned int startWidth,
+                      unsigned int startHeight,
+                      sf::Image &currentImage) const {
         std::vector<std::uint8_t> pixels(static_cast<std::size_t>(width) * height * 4, 0);
 
         if (startHeight >= height || startWidth >= width) {
@@ -42,8 +55,8 @@ public:
                          * this means that coordinating system in the image and cartesian coordinating
                          * systems are distinct
                          */
-                        double realC = (x - WIDTH / 2.0) * SCALE + fractal.getCenterX();
-                        double imagC = (y - HEIGHT / 2.0) * SCALE;
+                        double realC = viewport.minReal + (static_cast<double>(x) / width) * (viewport.maxReal - viewport.minReal);
+                        double imagC = viewport.minImag + (static_cast<double>(y) / height) * (viewport.maxImag - viewport.minImag);
 
                         std::complex<double> inputNumber(realC, imagC); // This number would be the input for iterationsCount function inside Mandelbrot and Julia model classes
 
@@ -69,6 +82,18 @@ public:
 
     unsigned int getWidth() const { return static_cast<unsigned int>(WIDTH); }
     unsigned int getHeight() const { return static_cast<unsigned int>(HEIGHT); }
+    Viewport getDefaultViewport(const Fractal &fractal) const {
+        const double scale = 4.0 / WIDTH;
+        const double realSpan = WIDTH * scale;
+        const double imagSpan = HEIGHT * scale;
+
+        return {
+            fractal.getCenterX() - realSpan / 2.0,
+            fractal.getCenterX() + realSpan / 2.0,
+            -imagSpan / 2.0,
+            imagSpan / 2.0
+        };
+    }
 
 private:
     // Gives a color for each iteration amount
@@ -103,8 +128,8 @@ private:
 
     static constexpr double WIDTH  = 1440;
     static constexpr double HEIGHT = 900;
-    static constexpr double SCALE = 4.0 / WIDTH;
 
+    // A palette of colors used in smoothColor function (AI generated btw :0)
     inline static const std::vector<sf::Color> colorPalette = {
         sf::Color(8, 10, 25),
         sf::Color(15, 20, 45),

@@ -57,6 +57,8 @@ cd bin
 ```
 > Note: On windows use `.\fracv.exe`
 
+### Usage
+
 to change computed fractal you can give the program arguments:
 ```bash
 ./fracv julia 0.112 0.1231
@@ -67,6 +69,10 @@ or:
 ./fracv mandelbrot
 ```
 if no argument is given program generates mandelbrot as default value.
+
+#### Zoom functionality
+there is a zoom functionality  
+to use it you just drag click your mouse on the screen.
 ## Other docs
 See [Documents folder](docs) for more details on the project.
 
