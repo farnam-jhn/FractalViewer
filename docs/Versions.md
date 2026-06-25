@@ -23,3 +23,9 @@ however the image looks different because i changed max iterations count.
 #### Description
 Modeld julia set, added an interface for fractals.
 practically nothing new.
+
+### V5 :
+![v5-1](v5-1.png) ![v5-2](v5-2.png)
+![v5-3](v5-3.png)
+#### Description
+Added zoom functionality and optimized the program by changing compile flags

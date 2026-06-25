@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODOs.md",
+                "file": "Versions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOs"
+              "title": "Versions"
             }
           }
         ],
@@ -200,6 +200,7 @@
   },
   "active": "fc6676ac4eff8e6a",
   "lastOpenFiles": [
+    "TODOs.md",
     "v5-3.png",
     "v5-2.png",
     "v5-1.png",
@@ -212,13 +213,11 @@
     "v3.png",
     "v2.png",
     "v1.png",
-    "TODOs.md",
     "The math behind.md",
     "Fractal viewer.md",
     "C++ Implementation.md",
     "FUTURE IDEA.md",
     "().md",
-    "img.png",
     "The.md",
     "The 1.md",
     "Welcome.md"
