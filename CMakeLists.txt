@@ -4,6 +4,13 @@ project(CMakeSFMLProject LANGUAGES CXX)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 find_package(Threads REQUIRED)
 
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build." FORCE)
+endif()
+
+set(SFML_BUILD_AUDIO OFF CACHE BOOL "Build SFML's Audio module" FORCE)
+set(SFML_BUILD_NETWORK OFF CACHE BOOL "Build SFML's Network module" FORCE)
+
 include(FetchContent)
 FetchContent_Declare(SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
@@ -18,10 +25,6 @@ add_executable(fracv src/main.cpp
         src/VisualComputer.h
         src/models/Julia.h)
 target_compile_features(fracv PRIVATE cxx_std_17)
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
 
 if(MSVC)
     target_compile_options(fracv PRIVATE /O2 /Oi /Ot /fp:fast /arch:AVX2)
