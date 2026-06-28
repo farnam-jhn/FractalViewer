@@ -23,7 +23,8 @@ FetchContent_MakeAvailable(SFML)
 add_executable(fracv src/main.cpp
         src/models/Mandelbrot.h
         src/VisualComputer.h
-        src/models/Julia.h)
+        src/models/Julia.h
+        src/models/BurningShip.h)
 target_compile_features(fracv PRIVATE cxx_std_17)
 
 if(MSVC)

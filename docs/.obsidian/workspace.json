@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++ Implementation.md",
+                "file": "Versions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C++ Implementation"
+              "title": "Versions"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Versions.md",
+                "file": "The math behind.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Versions"
+              "title": "The math behind"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,25 +197,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc6676ac4eff8e6a",
+  "active": "b7fa9c05174551dc",
   "lastOpenFiles": [
+    "C++ Implementation.md",
+    "The math behind.md",
+    "Fractal viewer.md",
     "TODOs.md",
+    "Versions.md",
+    "FUTURE IDEA.md",
+    "v6.png",
+    "Screenshot 2026-06-28 at 11.36.45 AM.png",
     "v5-3.png",
     "v5-2.png",
     "v5-1.png",
     "Screenshot 2026-06-25 at 12.47.34 PM.png",
     "Screenshot 2026-06-25 at 12.47.27 PM.png",
     "Screenshot 2026-06-25 at 12.47.16 PM.png",
-    "Versions.md",
     "Mandelbrot explorer.md",
     "v4-julia.png",
     "v3.png",
-    "v2.png",
-    "v1.png",
-    "The math behind.md",
-    "Fractal viewer.md",
-    "C++ Implementation.md",
-    "FUTURE IDEA.md",
     "().md",
     "The.md",
     "The 1.md",

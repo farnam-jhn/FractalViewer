@@ -2,19 +2,20 @@
 
 #include "Fractal.h"
 
-class Julia : public Fractal {
+class BurningShip : public Fractal {
 public:
-    Julia(std::complex<double> c) {
-        constant = c;
-    }
-    int iterationsCount(std::complex<double> z) const override {
+    int iterationsCount(std::complex<double> c) const override {
+        std::complex<double> z(0, 0);
         int iteration = 0;
 
         while (iteration < MAX_ITERATIONS) {
-            z = z * z + constant;
+            std::complex<double> temp(std::abs(z.real()), std::abs(z.imag()));
+            z = temp * temp + c;
+
             if (std::norm(z) >= MAX_MAGNITUDE * MAX_MAGNITUDE) {
                 break;
             }
+
             iteration++;
         }
 
@@ -24,7 +25,9 @@ public:
     std::string getName() override {
         return NAME;
     }
+
+    double getCenterX() const override { return -0.5; }
+
 private:
-    std::complex<double> constant;
-    const std::string NAME = "Julia Set";
+    const std::string NAME = "Burning Ship";
 };

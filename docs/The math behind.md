@@ -20,3 +20,12 @@ Julia set isn't that different from mandelbrot set, matter of facts thay are gen
 in mandelbrot set `Z` starts from the origin and `C` is any constant complex number 
 but in julia set, `C` is a constant complex number and `Z` is variable 
 
+#### Burning ship
+when i started this project, i didn't know what are escape time fractals
+but now that i know i can tell you that any fractal that is generated using escape time algorithm (see in [[C++ Implementation]]) is called and escape time fractal
+so in future when i implement any other new fractals i would just specify the generating formula.
+
+```Formula
+Z(n+1) = (|Re(Z(n))| + i|Im(Z(n))|)^2 + c
+```
+where as `c` is a constant complex number representing a point in the board.

@@ -3,6 +3,7 @@
 #include <cmath>
 #include <iostream>
 #include "models/Mandelbrot.h"
+#include "models/BurningShip.h"
 #include "VisualComputer.h"
 #include "models/Julia.h"
 
@@ -66,6 +67,8 @@ int main(int argc, char *argv[]) {
 
 	if (mode == "mandelbrot") {
 		fractal = new Mandelbrot();
+	} else if (mode == "burning-ship") {
+		fractal = new BurningShip();
 	} else if (mode == "julia") {
 		double real = -0.7, imag = 0.27; // defaults
 		if (argc > 3) {
@@ -75,7 +78,7 @@ int main(int argc, char *argv[]) {
 		fractal = new Julia(std::complex<double>(real, imag));
 	} else {
 		std::cerr << "Unknown mode: " << mode << "\n";
-		std::cerr << "Usage: fracv [mandelbrot|julia] [real] [imag]\n";
+		std::cerr << "Usage: fracv [mandelbrot|burning-ship|julia] [real] [imag]\n";
 		return 1;
 	}
 	const VisualComputer vc;

@@ -1,6 +1,5 @@
 #pragma once
 
-#include <complex>
 #include "Fractal.h"
 
 class Mandelbrot : public Fractal{
@@ -15,7 +14,6 @@ public:
 
         while (iteration < MAX_ITERATIONS) {
             z = z * z + c;
-
             /* Approach bellow is used so we can skip using sqrt.
             * another slower approach is to check if :
             *      std::abs(z) >= MAX_MAGNITUDE

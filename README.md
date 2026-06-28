@@ -1,9 +1,9 @@
 # Fractal viewer
 
-A C++ implementation to calculate and visualize the Mandelbrot and Julia sets, developed as a student project.
+A C++ implementation to calculate and visualize escape time fractals, developed as a student project.
 
 ## Project Overview
-This project provides a straightforward way to compute the Mandelbrot & Julia sets. The focus was on implementing the mathematical logic behind fractal generation, handling complex numbers, and ensuring a clean code structure.
+This project provides a straightforward way to compute modeled escape-time fractals. The focus was on implementing the mathematical logic behind fractal generation, handling complex numbers, and ensuring a clean code structure.
 
 ## Technical Details
 *   **Language:** C++
@@ -68,6 +68,11 @@ or:
 ```bash
 ./fracv mandelbrot
 ```
+for burning ship fractal:
+```bash
+./fracv burning-ship
+``` 
+
 if no argument is given program generates mandelbrot as default value.
 
 #### Zoom functionality
@@ -79,3 +84,4 @@ See [Documents folder](docs) for more details on the project.
 ## Screenshots
 ![Julia](img.png)
 ![Mandelbrot](img2.png)
+![BurningShip](img3.png)
