@@ -6,6 +6,7 @@
 #include "models/BurningShip.h"
 #include "VisualComputer.h"
 #include "models/Julia.h"
+#include "models/Tricorn.h"
 
 sf::Vector2i clampToWindow(sf::Vector2i position, unsigned int width, unsigned int height) {
 	return {
@@ -69,7 +70,10 @@ int main(int argc, char *argv[]) {
 		fractal = new Mandelbrot();
 	} else if (mode == "burning-ship") {
 		fractal = new BurningShip();
-	} else if (mode == "julia") {
+	} else if (mode == "tricorn") {
+		fractal = new Tricorn();
+	}
+	else if (mode == "julia") {
 		double real = -0.7, imag = 0.27; // defaults
 		if (argc > 3) {
 			real = std::stod(argv[2]);
@@ -78,7 +82,7 @@ int main(int argc, char *argv[]) {
 		fractal = new Julia(std::complex<double>(real, imag));
 	} else {
 		std::cerr << "Unknown mode: " << mode << "\n";
-		std::cerr << "Usage: fracv [mandelbrot|burning-ship|julia] [real] [imag]\n";
+		std::cerr << "Usage: fracv [mandelbrot|burning-ship|julia|tricorn] [real] [imag]\n";
 		return 1;
 	}
 	const VisualComputer vc;

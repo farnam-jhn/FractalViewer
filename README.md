@@ -85,3 +85,4 @@ See [Documents folder](docs) for more details on the project.
 ![Julia](img.png)
 ![Mandelbrot](img2.png)
 ![BurningShip](img3.png)
+![Tricorn](img4.png)

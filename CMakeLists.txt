@@ -24,7 +24,8 @@ add_executable(fracv src/main.cpp
         src/models/Mandelbrot.h
         src/VisualComputer.h
         src/models/Julia.h
-        src/models/BurningShip.h)
+        src/models/BurningShip.h
+        src/models/Tricorn.h)
 target_compile_features(fracv PRIVATE cxx_std_17)
 
 if(MSVC)

@@ -34,3 +34,7 @@ Added zoom functionality and optimized the program by changing compile flags
 ![v6](v6.png)
 #### Description
 Implemented burning ship fractal
+### V7 :
+![v7](v7.png)
+#### Description
+Implemented tricorn fractal
